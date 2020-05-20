@@ -25,7 +25,7 @@ AXIOM_CPPFLAGS := $(PLATFORM_DEFS)
 AXIOM_CFLAGS := -std=gnu99 -fPIC -DPIC -pthread
 
 AXIOM_CFLAGS += -Wall
-AXIOM_CFLAGS += -Werror
+#AXIOM_CFLAGS += -Werror
 AXIOM_CFLAGS += -Wextra
 AXIOM_CFLAGS += -Wbad-function-cast
 AXIOM_CFLAGS += -Wcast-qual

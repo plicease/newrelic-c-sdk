@@ -32,7 +32,7 @@ REFERENCE_DIR := $(CURDIR)/reference
 TEST_CFLAGS := -std=gnu99 -pthread
 
 TEST_CFLAGS += -Wall
-TEST_CFLAGS += -Werror
+#TEST_CFLAGS += -Werror
 TEST_CFLAGS += -Wextra
 TEST_CFLAGS += -Wbad-function-cast
 TEST_CFLAGS += -Wcast-qual

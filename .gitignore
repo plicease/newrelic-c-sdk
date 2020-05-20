@@ -66,3 +66,6 @@ tests/integration/*/*.log
 # Byproducts of jetbrains
 #
 .idea/
+
+/ffpm-root
+*.deb

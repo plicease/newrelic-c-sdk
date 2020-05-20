@@ -18,7 +18,7 @@ C_AGENT_CPPFLAGS += -I$(C_AGENT_ROOT)/vendor/newrelic/axiom -I$(C_AGENT_ROOT)/in
 
 C_AGENT_CFLAGS := -std=gnu99 -fPIC -DPIC -pthread
 C_AGENT_CFLAGS += -Wall
-C_AGENT_CFLAGS += -Werror
+#C_AGENT_CFLAGS += -Werror
 C_AGENT_CFLAGS += -Wextra
 C_AGENT_CFLAGS += -Wbad-function-cast
 C_AGENT_CFLAGS += -Wcast-qual

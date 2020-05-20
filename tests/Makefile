@@ -17,7 +17,7 @@ include ../vendor/newrelic/make/config.mk
 TEST_CFLAGS := -std=gnu99 -pthread $(CMOCKA_INCLUDE) -g
 
 TEST_CFLAGS += -Wall
-TEST_CFLAGS += -Werror
+#TEST_CFLAGS += -Werror
 TEST_CFLAGS += -Wextra
 TEST_CFLAGS += -Wcast-qual
 TEST_CFLAGS += -Wdeclaration-after-statement
