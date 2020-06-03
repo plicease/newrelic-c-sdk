@@ -6,6 +6,7 @@
 #include "util_memory.h"
 #include "util_sleep.h"
 #include "util_strings.h"
+#include "util_system.h"
 
 #include <stdlib.h>
 
@@ -128,4 +129,9 @@ void newrelic_add_api_supportability_metric(nrtxn_t* txn, const char* name) {
   nrm_force_add(txn->unscoped_metrics, metric, 0);
 
   nr_free(metric);
+}
+
+bool newrelic_set_hostname(const char *hostname) {
+  nrl_info(NRL_API, "override hostname to %s", hostname);
+  return nr_system_set_hostname(hostname);
 }

@@ -1248,6 +1248,8 @@ bool newrelic_accept_distributed_trace_payload_httpsafe(
 bool newrelic_set_transaction_name(newrelic_txn_t* transaction,
                                    const char* transaction_name);
 
+bool newrelic_set_hostname(const char *hostname);
+
 /**
  * A list of examples for Doxygen to cross-reference. If a function in
  * libnewrelic.h appears in one of these examples, the example source

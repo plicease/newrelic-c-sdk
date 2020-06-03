@@ -45,6 +45,13 @@ extern char* nr_system_get_service_port(const char* service,
 extern char* nr_system_get_hostname(void);
 
 /*
+ * Purpose : Set the host name.
+ *
+ * Returns : 1 on success
+ */
+extern int nr_system_set_hostname(const char*);
+
+/*
  * Purpose : Returns the number of logical processors available.
  *
  * Returns : The number of logical processors available.

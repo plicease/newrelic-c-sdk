@@ -23,8 +23,20 @@ char* nr_system_get_service_port(const char* service, const char* port_type) {
   return port;
 }
 
+static char *override_hostname;
+
+int nr_system_set_hostname(const char *hostname) {
+  nr_free(override_hostname);
+  override_hostname = nr_strdup(hostname);
+  return 1;
+}
+
 char* nr_system_get_hostname(void) {
   char hn[512];
+
+  if (override_hostname != NULL) {
+    return nr_strdup(override_hostname);
+  }
 
   nr_memset(&hn, 0, sizeof(hn));
 
